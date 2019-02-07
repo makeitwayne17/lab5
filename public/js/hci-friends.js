@@ -4,6 +4,10 @@
 $(document).ready(function() {
 	initializePage();
 })
+$("#hello").click(function(){
+	alert("something");
+	anagrammedName(anagrammedName({{name}}));
+});
 
 /*
  * Function that is called when the document is ready.
@@ -14,6 +18,7 @@ function initializePage() {
 
 function anagrammedName(name) {
 	// Thanks, Internet Anagram Server!
+	console.log(name);
 	
 	if (name == "Doug Engelbart") {
 		return "Notable Grudge";
